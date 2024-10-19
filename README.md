@@ -24,4 +24,4 @@ Multiple regression-
 
 ## Insights
 - Positive relationship between **Stock** and **Demand**.
-- A potential negative relationship between **Price** and **Demand** (if included).
+- A potential negative relationship between **Price** and **Demand**.
