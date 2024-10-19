@@ -1,36 +1,26 @@
-# Multiple Linear Regression for Demand Prediction
+# Demand Prediction using Linear Regression
 
-## Overview
-
-This project implements a **multiple linear regression model** to predict demand based on various supply-related factors. It demonstrates the end-to-end process of preparing data, building, and evaluating a linear regression model using Python.
+This project demonstrates a simple linear regression model to predict demand based on stock levels.
 
 ## Dataset
-- **Dataset Name:** demand_supply.data.csv  
-- **Description:** The dataset contains information on different features that influence demand. The objective is to predict demand based on these factors.
-- **Missing Values:** Checked and handled in the notebook.
-
-## Libraries Used
-- `pandas`: Data manipulation and analysis
-- `numpy`: Numerical computations
-- `matplotlib` & `seaborn`: Data visualization
-- `scikit-learn`: Model building and evaluation
+- **demand_stock.data.csv**: Contains information on stock levels and demand.
 
 ## Project Workflow
+1. Load the dataset and explore it for missing values and data types.
+2. Select **Stock** as the feature and **Demand** as the target variable.
+3. Train a Linear Regression model on the data.
+4. Evaluate the model using Mean Squared Error (MSE) and R² Score.
+5. Visualize the predictions and residuals.
 
-1. **Data Loading:**  
-   The dataset is loaded using `pandas` and inspected for missing values and basic statistics.
+## Results
+Linear regression-
+- **Mean Squared Error**: 0.8887235474970236
+- **R² Score**: 0.6702928653566578
+Multiple regression-
+- **Mean Squared Error**: 0.4522479816837192
+- **R² Score**: 0.9751106638519218
+  
 
-2. **Exploratory Data Analysis (EDA):**  
-   Visualizations are used to explore the relationships between features and the target variable (demand).
-
-3. **Data Preprocessing:**  
-   - Missing values are checked and handled.
-   - Features are defined by dropping the `Demand` column.
-   - The target variable is the `Demand`.
-
-4. **Model Development:**  
-   - The dataset is split into training (80%) and testing (20%) sets.
-   - A multiple linear regression model is trained using the **LinearRegression** class from `scikit-learn`.
-
-5. **Model Evaluation:**  
-   - Performance metrics such as **Mean Squared Error (MSE)** and **R² Score** are calculated to assess the model’s effectiveness.
+## Insights
+- Positive relationship between **Stock** and **Demand**.
+- A potential negative relationship between **Price** and **Demand** (if included).
