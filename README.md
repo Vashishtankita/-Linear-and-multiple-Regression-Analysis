@@ -16,6 +16,7 @@ This project demonstrates a simple linear regression model to predict demand bas
 Linear regression-
 - **Mean Squared Error**: 0.8887235474970236
 - **R² Score**: 0.6702928653566578
+
 Multiple regression-
 - **Mean Squared Error**: 0.4522479816837192
 - **R² Score**: 0.9751106638519218
